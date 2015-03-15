@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <ul>
+        <li>
+            @Html.ActionLink("Login", "Index", new { Controller = "Login" })
+        </li>
+        <li>
+            @Html.ActionLink("Logout", "Logout", new { Controller = "Login" })
+        </li>
+    </ul>
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>
